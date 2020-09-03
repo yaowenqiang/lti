@@ -116,10 +116,56 @@ Layer to Layer
 + each layer is responsible for peeling that layer off from the other end
 
 
+TCP/IP Model
+
++ Application Layer
++ transport Layer
++ Internet Layer
++ Network Access Layer
+
+
+> rfc1122
+
+
+Internet Layer 
+
++ IP, ICMP intended for this layer
++ Robustness Principle - "Be liberal in what you accept and conservative in what you send" specifically applies here
++ Processing rules to ensure datagrams end up where they are supposed to
++ May require reassembly
+
+
+Transport Layer
+
++ TCP, UDP are Transport Layer protocols
++ handle end-to-end delivery
+  + UDP doesn't care whether datagrams arrive or not
+  + TCP handles connection-oriented communication
+
+
+
+Wireshark
+
+filters
+
+> ip
++ TCP
++ HTTP
++ ip.addr == 192.168.8.1
++ ip.src == 192.168.1.1
+
+
+IETF
 
 
 
 # Connections Protocols
+
+## Ethernet
+
+> OUI
+
+
 # Internet Protocol(IP)
 # ICMP
 # TCP
