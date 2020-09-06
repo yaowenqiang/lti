@@ -175,7 +175,27 @@ VLANs and 802.1Q
 
 ## IP headers
 
-## BGP(Broud Gatway Protocol)
+### IP Address and Subnet
+
+
+10.110.10.1 
+Network address
+10.110.10.0
+Broadcast address
+10.110.10.255
+
+## Routing
+
+> netstat -rn # show routing table
+> traceroute 4.2.2.1
+
+## BGP(Border Gatway Protocol port 179) 
+
+ibgp
+ebgp
+
+
+
 
 ## RIP(Routing Information Protocol)
 
