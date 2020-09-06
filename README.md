@@ -203,11 +203,63 @@ ebgp
 
 ## ARP(Address Resolution Protocol)
 
-## ARP spoofing
+>> arp -a
+
+##  ARP spoofing
+
+> arpspoof 192.168.1.1
+> tcpdump -i br0 host 192.168.1.1
 
 ## RARP(Reverse Address Resolution Protocol)
 
+
+## Internet Registries
+
+> whois -h whois.arin.net 4.2.2.1
+
+## Autoconfiguration with Bootp / DCHP
+
+> /etc/udhcpd.conf
+
+
+## IP configuration
+
+### Windows
+
+> ipconfig
+
+> ipconfig /all
+
+## IP fragmentation
+
+> ping -s 3100 192.168.1.1
+
+> Identification
+
 # ICMP
+
+Internet Control Message Protocol
+
+## ICMP message types
+
+> rfc 792
+
+> https://tools.ietf.org/html/rfc792
+
+## Ping
+
+> ping  192.168.1.1
+
+### Error messages
+
+> traceroute www.google.com
+
+### ICMP attach
+
+> ping -s 1450 192.168.1.1
+
+> ping 192.168.101.255
+
 
 
 # TCP
