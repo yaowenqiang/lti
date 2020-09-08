@@ -263,10 +263,51 @@ Internet Control Message Protocol
 
 
 # TCP
+
+
+
 # UDP
 # Session Layer
 # Application Layer
 # Application Of Network Analysis
+
+## Firewall
+
+> https://www.checkpoint.com/
+> cisco
+
+### stateful firewall
+
+> iptables
+
+> sudo iptables -A OUTPUT -p tcp -m state --state NEW -j DROP
+> sudo iptables -F
+
+> sudo iptables -L -v
+
+> sudo iptables -A OUTPUT -p icmp -m state --state NEW -j DROP
+
+> sudo iptables -A OUTPUT -p tcp --dport 80 -m state --state NEW,ESTABLISHED,RELATED -j DROP
+> telnet www.baidu.com 80 # fail
+> telnet www.baidu.com 443 # succeed
+
+### Stateless - Access Control Lists
+
+### Application Layer Firewall
+
+> squid proxy 
+
+> cisco application layer protocol protection
+
+> blue coat
+> acmepacket
+
+
+## Building Packets
+
+> packETH
+> hping
+
 # Wireless
 # IPv6
 # wrapping Up
