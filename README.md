@@ -268,6 +268,15 @@ Internet Control Message Protocol
 
 # UDP
 # Session Layer
+
++ SSL/TLS
+
+> openssl 
+> s_client -connect www.baidu.com:443
+> GET / HTTP/1.1
+> HOST www.baidu.com
+
+
 # Application Layer
 # Application Of Network Analysis
 
